@@ -10,3 +10,9 @@ This is my first project in which i've thought about it during my free time.
 - CSS
 - JS
 - PHP (soon)
+
+## Pomodoro principe :
+- Input a hour, minute, second into 3 variables
+- Get the current time
+- While the current time isn't the same than these 3 variables : don't do anything
+- When the asked time is reached, close the loop
