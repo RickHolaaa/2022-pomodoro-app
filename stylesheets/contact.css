@@ -13,18 +13,18 @@ h1{
 
 #header #navigation{
     padding: 10;
+    width: 100%;
     display: flex;
     float:right;
     list-style: none;
     background-color: blue;
     color: white;
     font-weight: bold;
+    flex-direction: row;
 }
 
 
 li{
-    margin-right: 2rem;
-    margin-left: 2rem;
     text-align: center;
 }
 
@@ -32,9 +32,27 @@ li{
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100%;
 }
 
 a{
     text-decoration: none;
     color: white;
+    flex:1;
+    background-color: black;
+    padding: 11;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+img{
+    width: 100%;
+}
+
+a:hover{
+    padding: 11;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    color:blue;
+    background-color: white;
 }
