@@ -9,7 +9,7 @@ function getValue() {
 }
 
 function Timer(){
-    var currentDate = new Date()
+    var currentDate = new Date();
     var day = currentDate.getDate();
     var month = currentDate.getMonth()+1;
     var year = currentDate.getFullYear();
@@ -18,12 +18,13 @@ function Timer(){
     var second = currentDate.getSeconds();
     var input = getValue();
     if(parseInt(minute)+parseInt(input)>60){
-        var resulthour = parseInt(hour) + parseInt(minute)/60;
-        var resultminute = parseInt(minute)%60;
+        var resulthour = parseInt(hour) + parseInt((parseInt(minute)+parseInt(input))/60);
+        var resultminute = (parseInt(minute)+parseInt(input))%60;
     }
-    var result = parseInt(minute)+parseInt(input);
+    var result = parseInt(minute)+parseInt(resultminute);
+    var result2 = resulthour+parseInt(hour);
     alert("Today we're the "+day+"/"+month+"/"+year+ " at "+hour+":"+minute+":"+second);
-    alert("This timer will end at "+hour+":"+result+":"+second);
+    alert("This timer will end at "+resulthour+":"+resultminute+":"+second);
 }
 
 /*

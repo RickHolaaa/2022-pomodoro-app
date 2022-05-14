@@ -1,9 +1,10 @@
 body{
     width: 100%;
-    height: 100%;
+    height: 120%;
     background-color: bisque;
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
+    position: relative;
 }
 
 h1{
@@ -35,7 +36,7 @@ li{
     width: 100%;
 }
 
-a{
+.nav{
     text-decoration: none;
     color: white;
     flex:1;
@@ -49,10 +50,48 @@ img{
     width: 100%;
 }
 
-a:hover{
+.nav:hover{
     padding: 11;
     padding-left: 2rem;
     padding-right: 2rem;
     color:blue;
     background-color: white;
+}
+
+footer{
+    width: 100%;
+    height: 15rem;
+    background-color: black;
+    bottom: 0;
+    position: absolute;
+}
+
+.copyright{
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 6rem;
+}
+
+.social{
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.fb{
+    width: 2rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.ig{
+    width: 2rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.ld{
+    width: 2rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
 }
