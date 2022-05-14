@@ -18,7 +18,7 @@ function Timer(){
     var second = currentDate.getSeconds();
     var input = getValue();
     if(parseInt(minute)+parseInt(input)>60){
-        var resulthour = parseInt(hour) + parseInt((parseInt(minute)+parseInt(input))/60);
+        var resulthour = (parseInt(hour) + parseInt((parseInt(minute)+parseInt(input))/60))%24;
         var resultminute = (parseInt(minute)+parseInt(input))%60;
     }
     var result = parseInt(minute)+parseInt(resultminute);
